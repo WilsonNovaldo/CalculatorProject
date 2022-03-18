@@ -41,9 +41,9 @@ function renderHistory() {
     for (let history of historyData) {
         let row = document.createElement('tr');
         row.innerHTML = "<td>" + history.firstNumber + "</td>";
-        row.innerHTML = "<td>" + history.operator + "</td>";
-        row.innerHTML = "<td>" + history.secondNumber + "</td>";
-        row.innerHTML = "<td>" + history.result + "</td>";
+        row.innerHTML += "<td>" + history.operator + "</td>";
+        row.innerHTML += "<td>" + history.secondNumber + "</td>";
+        row.innerHTML += "<td>" + history.result + "</td>";
 
         historyList.appendChild(row);
     }
